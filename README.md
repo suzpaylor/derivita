@@ -12,7 +12,7 @@ This took me about 2 - 3 hours total to create it as exact as the template.
 
 ### Installing
 
-The sample sent had very specific width's and proportions - I approached this in the sense of a template for a publication, respecting those designated widths and keeping the card centered on the page.  Normally I would do this completely with FlexBox - but without knowing the final use for this card I kept within the specifications.  For an example of how I would do this with flexbox look at the projects on my portfolio page - all built without bootstrap as a coding exercise:  Each card has a minimum width of about 320 pixels, but the content remains centered.
+The sample sent had very specific widths and proportions - I approached this in the sense of a template for a publication, respecting those designated widths and keeping the card centered on the page.  Normally I would do this completely with FlexBox - but without knowing the final use for this card I kept within the specifications.  For an example of how I would do this with flexbox look at the projects on my portfolio page - all built without bootstrap as a coding exercise:  Each card has a minimum width of about 320 pixels, but the content remains centered.
 (https://suzpaylor.github.io/CurrentPortfolio/Portfolio.html)
 
 
