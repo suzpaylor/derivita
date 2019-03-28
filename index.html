@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+Write HTML and CSS to imlement the design specification https://xd.adobe.com/spec/04af9ee7-b732-4532-66df-fd5051b61d9b-729e/
+Make sure the content centers itself vertically and horizontally as you resize the window
+Add an image of your choice in the box that says "Insert Image Here"
+Install the font from Google Fonts
+Create a Readme file. Write a short description of how you approached the problem, any references you used, and any other thoughts you have on the assignment.
+    -->
+    <!--META-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--PAGE TITLE-->
+    <title>Derivita</title>
+    <!--FAVICON/FONTS-AWESOME-->
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <!--FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!--STYLESHEETS-->
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <!--JQUERY BOOTSTRAP-->
+
+    <script src="myscripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+    <div class="content_wrapper">
+
+        <div class="title_outside_wrapper">
+            <div class="circle_wrapper">
+                <!--circle here-->
+            </div>
+            <div class="title_inside_wrapper">
+                <div class="title_text_wrapper">
+                    <h2>Title</h2>
+                    <p>Subtitle</p>
+                </div>
+            </div>
+            <div class="pencil_container">
+                <div class="pencil_wrapper">
+                    <i class="fas fa-pencil-alt"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="card_wrapper">
+            <div class="image_wrapper">
+                <div class="hide_me_wrapper">
+                    <p id="hide_me">Insert Image Here</p>
+                </div>
+            </div>
+            <div class="buttons_wrapper">
+                   <div class="buttons_div">
+                        <button type="button" class="btn_cancel">CANCEL</button>
+                        <button type="button" class="btn_save" >SAVE</button>
+                   </div>
+            </div>
+        </div>
+
+    </div>
+
+<!--SCRIPTS-->
+
+   <script>
+   $('.btn_save').on({
+    'click': function(){
+        $('#hide_me').hide();
+        console.log('hi');
+        $('.hide_me_wrapper').prepend($('<img>', {id:'theImg',src:'my_image.png'}));
+        $('.btn_save').hide();
+    }
+});
+
+$('.btn_cancel').on({
+    'click': function(){
+        $('#theImg').hide();
+        $('#hide_me').show();
+        $('.btn_save').show();
+    }
+});
+   </script>
+</body>
+
+</html>
